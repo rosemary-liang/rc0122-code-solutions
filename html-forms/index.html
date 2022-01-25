@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Forms</title>
+  <style>
+    div.addspace {
+      margin: 10px 0px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Coding Form!</h1>
+  <form action="" method="get">
+    <div>
+      <label for="email">Email</label>
+      <div><input type="text"></div>
+    </div>
+
+    <div>
+      <label for="why-is-coding-cool">Why is coding cool?</label>
+      <div>
+        <select id="why-is-coding-cool">
+          <option label="Select an option"></option>
+          <option label="Because it's interesting"></option>
+          <option label="Because it's fun"></option>
+          <option label="Because it's powerful"></option>
+        </select>
+      </div>
+    </div>
+
+    <div class="addspace">
+      <label for="fav-language">Favorite language (choose one)</label>
+      <div class="addspace">
+        <input type="radio" id="html" name="fav-language" value="HTML">
+        <label for="html">HTML</label>
+        <input type="radio" id="CSS" name="fav-language" value="CSS">
+        <label for="css">CSS</label>
+        <input type="radio" id="Javascript" name="fav-language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+      </div>
+    </div>
+
+    <div class="addspace">
+      <label for="sign-up">Would you like to sign up for more information?</label>
+      <div class="addspace">
+        <input type="checkbox" id="sign-up">
+        <label for="sign-up">Sign me up!</label>
+      </div>
+    </div>
+
+    <div>
+      <label for="comments">Comments</label>
+      <textarea id="comments" rows="10" cols="35"></textarea>
+    </div>
+    <button>Submit</button>
+  </form>
+</body>
+</html>
