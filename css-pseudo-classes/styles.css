@@ -1,0 +1,26 @@
+button,
+button:hover {
+  padding: 8px 26px;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+table {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  border-color: white;
+}
+
+th {
+  background-color: black;
+  color: white;
+}
+
+tr:nth-child(2n+1) {
+  background-color: lightgray;
+}
