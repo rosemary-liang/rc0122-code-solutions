@@ -8,7 +8,7 @@ body {
 }
 
 h2 {
-  color: #ff7f50;
+  color: orangered;
   text-transform: uppercase;
   font-size: 1.2em;
   letter-spacing: 0.1rem;
@@ -20,11 +20,14 @@ select {
   border-radius: 6px;
   height: 40px;
   width: 500px;
+  border-width: 0.1rem;
+  border-color: lightgray;
+  text-indent: 10px;
 }
 
 input::placeholder {
   letter-spacing: 0.01rem;
-  font-size: 1.05em;
+  font-size: 1.25em;
 }
 
 select {
@@ -34,6 +37,8 @@ select {
 label {
   text-transform: uppercase;
   font-weight: bold;
+  display: inline-block;
+  text-indent: 10px;
 }
 
 div {
@@ -51,7 +56,7 @@ div {
   border-radius: 30px;
   text-transform: uppercase;
   float: right;
-  background-color: #ff7f50;
+  background-color: orangered;
   color: white;
   border: none;
 }
