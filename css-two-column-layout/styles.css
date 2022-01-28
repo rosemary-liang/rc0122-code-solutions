@@ -1,0 +1,47 @@
+* {
+  font-family: Karla, sans-serif;
+}
+
+div.header {
+  text-align: center;
+  width: 75%;
+}
+
+h1 {
+  font-size: 2.6rem;
+  letter-spacing: 0.2rem;
+}
+
+p.header {
+  text-align: center;
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+}
+
+p {
+  font-size: 0.75rem;
+}
+
+img {
+  height: 90px;
+  width: 90px;
+}
+
+h3 {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+p.sub-article {
+  line-height: 1.2rem;
+}
+
+button {
+  background-color: white;
+  border-color: chocolate;
+  color: chocolate;
+  border-width: thin;
+  border-style: solid;
+  padding: 0.4rem 2rem;
+  font-weight: bold;
+}

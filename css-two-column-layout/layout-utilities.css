@@ -1,0 +1,72 @@
+/* layout classes start  */
+.container {
+  width: 1000px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.article {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column-three-fourths {
+  width: 225px;
+}
+
+.column-one-fourth {
+  width: 90px;
+}
+
+.sub-article {
+  display: flex;
+  flex-basis: calc(100% / 2);
+}
+
+.icon-container {
+  display: flex;
+  height: 90px;
+  width: 90px;
+  justify-content: center;
+}
+
+/* layout classes end */
+
+/* utility classes start */
+.padding1rem {
+  padding: 0 1rem;
+}
+
+.padding2rem {
+  padding: 0 2rem;
+}
+
+.padding3rem {
+  padding: 0 3rem;
+}
+
+.paddingleft2rem {
+  padding-left: 5rem;
+}
+
+.margin0 {
+  margin: 0;
+}
+
+.margin1rem {
+  margin: 1rem 0;
+}
+
+.margin2rem {
+  margin: 1.5rem 0;
+}
+
+.margin-header {
+  margin: 3rem 1.5rem 1.5rem;
+}
+
+/* utility classes end */
