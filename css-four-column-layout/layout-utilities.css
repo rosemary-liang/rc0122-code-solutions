@@ -1,0 +1,30 @@
+.container {
+  background-color: rgb(250 250 250);
+  margin: 0 auto;
+  width: 800px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 25%;
+}
+
+.padding1rem {
+  padding: 1rem;
+}
+
+.padding2rem {
+  padding: 2rem;
+}
+
+.margin2rem {
+  margin: 2rem;
+}
