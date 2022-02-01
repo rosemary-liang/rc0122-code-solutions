@@ -1,0 +1,28 @@
+* {
+  font-family: Barlow, sans-serif;
+}
+
+h1 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+img.screen {
+  width: 10rem;
+}
+
+img.icon {
+  width: 3rem;
+}
+
+h2 {
+  font-size: 0.75rem;
+  text-align: center;
+  width: 10rem;
+}
+
+p {
+  font-size: 0.6rem;
+  text-align: center;
+  width: 10rem;
+}
