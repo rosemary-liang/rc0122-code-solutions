@@ -1,0 +1,170 @@
+/* layout classes start */
+.container {
+  width: 900px;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+header {
+  display: flex;
+}
+
+.navbar {
+  font-family: Avenir, sans-serif;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+}
+
+.col-1 {
+  width: 10%;
+}
+
+.col-2 {
+  width: 20%;
+}
+
+.col-3 {
+  width: 30%;
+}
+
+.col-4 {
+  width: 40%;
+}
+
+.col-5 {
+  width: 50%;
+}
+
+.col-6 {
+  width: 60%;
+}
+
+.col-7 {
+  width: 70%;
+}
+
+.col-8 {
+  width: 80%;
+}
+
+.col-9 {
+  width: 90%;
+}
+
+.col-10 {
+  width: 100%;
+}
+
+/* layout classes end */
+
+/* utility classes start */
+.tiempos {
+  font-family: "Tiempos Headline", serif;
+}
+
+.avenir {
+  font-family: Avenir, sans-serif;
+}
+
+.padding05rem {
+  padding: 0.5rem;
+}
+
+.padding1rem {
+  padding: 0 1rem;
+}
+
+.padding2rem {
+  padding: 0 2rem;
+}
+
+.paddingall2rem {
+  padding: 2rem;
+}
+
+.paddv2rem {
+  padding: 2rem 0;
+}
+
+.paddingh2rem {
+  padding: 0 2rem;
+}
+
+.paddingbottom2rem {
+  padding: 0 0 2rem;
+}
+
+.padding3rem {
+  padding: 2rem 2rem 0 3rem;
+}
+
+.margin0 {
+  margin: 0;
+}
+
+.margin025rem {
+  margin: 0.25rem 0.25rem 0.25rem 2rem;
+}
+
+.margin05rem {
+  margin: 0.5rem;
+}
+
+.marginv05rem {
+  margin: 0.5rem 0;
+}
+
+.marginv1rem {
+  margin: 1rem 0;
+}
+
+.marginh1rem {
+  margin: 0 1rem;
+}
+
+.margin1rem {
+  margin: 1rem;
+}
+
+.marginv2rem {
+  margin: 2rem 0;
+}
+
+.margintop2rem {
+  margin: 2rem 0 0;
+}
+
+.margin2rem {
+  margin: 2rem;
+}
+
+.margintop3rem {
+  margin: 3rem 0 0;
+}
+
+.margin-past-clients {
+  margin: 0.5rem 2rem;
+}
+
+/* utility classes end */

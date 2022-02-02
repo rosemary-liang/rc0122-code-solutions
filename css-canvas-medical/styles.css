@@ -1,0 +1,198 @@
+header {
+  border-bottom: rgb(214 214 214) solid;
+  border-width: 0.01rem;
+}
+
+img.logo {
+  width: 120px;
+  height: 40px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav > a {
+  text-decoration: none;
+  color: gray;
+}
+
+a.button {
+  background-color: rgb(5 17 44 / 80.1%);
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 0.6rem;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+/* hero image start */
+
+.article-hero {
+  position: relative;
+}
+
+div.hero-background {
+  background-image: url("images/hero.jpg");
+  background-size: cover;
+  width: 850px;
+  height: 400px;
+  filter: brightness(75%);
+  margin: 0 2rem;
+}
+
+.hero-text-container {
+  position: absolute;
+  top: 0;
+  height: 400px;
+}
+
+.sub-article-hero {
+  color: white;
+  z-index: 1;
+}
+
+h1.sub-article-hero {
+  letter-spacing: 0.02rem;
+  font-size: 1.75rem;
+  padding: 3rem 0 0 5rem;
+}
+
+p.sub-article-hero {
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+  padding: 1rem 5rem;
+  letter-spacing: 0.01rem;
+}
+
+button.hero {
+  margin: 1rem 0 1rem 5rem;
+  padding: 1rem;
+}
+
+/* clinicians prefer canvas start */
+
+.article-past-clients {
+  background-color: rgb(248 248 248);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color: gray;
+  height: 360px;
+}
+
+.sub-article-past-clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 2rem;
+}
+
+div.past-clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.past-clients {
+  font-size: 0.9rem;
+}
+
+h2.prefer-canvas,
+p.prefer-canvas {
+  margin: 0.5rem;
+  text-align: center;
+}
+
+p.prefer-canvas {
+  font-size: 0.8rem;
+}
+
+button.get-started {
+  background-color: rgb(5 17 44 / 80.1%);
+  color: white;
+  padding: 0.75rem 2.2rem;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+button.learn-more {
+  margin: 1rem 0 1rem 3rem;
+}
+
+/* learn more start */
+
+.row-learn-more {
+  display: flex;
+  align-items: center;
+}
+
+div.sub-article-learn-more > h2 {
+  font-size: 1.5rem;
+  color: rgb(2 2 2);
+}
+
+div.sub-article-learn-more > p {
+  font-size: 0.8rem;
+  color: rgb(95 93 93);
+}
+
+/* footer start */
+
+footer > .row-main {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(34 38 39 / 80.1%);
+  color: white;
+  height: 360px;
+  align-items: center;
+}
+
+img.logo-white {
+  height: 20px;
+  width: auto;
+}
+
+div.footer-address > p {
+  font-size: 0.75rem;
+  line-height: 0.7rem;
+}
+
+.article-footer-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 2rem 0 0;
+}
+
+div.footer-links {
+  display: flex;
+  flex-direction: column;
+}
+
+div.footer-links > p {
+  margin: 0;
+}
+
+.footer-links > a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+
+footer > row-bottom {
+  background-color: rgb(248 248 248);
+}
+
+div.footer-bottom-links > a {
+  text-decoration: none;
+  color: gray;
+  font-size: 0.75rem;
+}
