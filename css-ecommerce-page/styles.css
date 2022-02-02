@@ -1,0 +1,69 @@
+* {
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  width: 850px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+  align-items: center;
+  justify-content: center;
+}
+
+.row-brand-size {
+  display: flex;
+}
+
+.row-price {
+  display: flex;
+}
+
+img {
+  width: 8rem;
+  height: 12rem;
+}
+
+h1 {
+  font-size: 1.25rem;
+}
+
+p.brand,
+p.size {
+  font-size: 0.6rem;
+  margin: 0 0.2rem;
+}
+
+/* p.brand {
+  font-weight: 900;
+} */
+
+p.size {
+  color: lightgray;
+}
+
+p.price,
+p.oldprice {
+  font-size: 0.6rem;
+  margin: 0 0.2rem;
+}
+
+p.price {
+  background-color: rgb(252 229 209 / 81.5%);
+
+  /* font-weight: bold; */
+}
+
+p.oldprice {
+  text-decoration: line-through;
+  color: lightgray;
+}
