@@ -18,3 +18,16 @@
   font-weight: 300;
   src: url("TiemposHeadline-LightItalic.woff2") format("woff2");
 }
+
+.tiempos {
+  font-family: "Tiempos Headline", serif;
+}
+
+.avenir {
+  font-family: Avenir, sans-serif;
+}
+
+.avenir-italic {
+  font-family: Avenir, sans-serif;
+  font-style: italic;
+}
