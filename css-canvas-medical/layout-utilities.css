@@ -11,7 +11,6 @@ header {
 }
 
 .navbar {
-  font-family: Avenir, sans-serif;
   font-size: 0.7rem;
   display: flex;
   justify-content: flex-end;
@@ -79,13 +78,6 @@ header {
 /* layout classes end */
 
 /* utility classes start */
-.tiempos {
-  font-family: "Tiempos Headline", serif;
-}
-
-.avenir {
-  font-family: Avenir, sans-serif;
-}
 
 .padding05rem {
   padding: 0.5rem;
@@ -103,8 +95,16 @@ header {
   padding: 2rem;
 }
 
+.padding-product-2rem {
+  padding: 0 2rem 2rem;
+}
+
 .paddv2rem {
   padding: 2rem 0;
+}
+
+.paddingtop3rem {
+  padding: 5rem 0 0;
 }
 
 .paddingh2rem {
