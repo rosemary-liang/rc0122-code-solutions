@@ -39,13 +39,13 @@ a.button {
   align-items: center;
 }
 
-div.sub-article-learn-more > h2 {
+.sub-article-learn-more > h2 {
   font-size: 1.5rem;
   font-weight: lighter;
   color: rgb(2 2 2);
 }
 
-div.sub-article-learn-more > p {
+.sub-article-learn-more > p {
   font-size: 0.8rem;
   color: rgb(95 93 93);
 }
@@ -66,7 +66,7 @@ img.logo-white {
   width: auto;
 }
 
-div.footer-address > p {
+.footer-address > p {
   font-size: 0.75rem;
   line-height: 0.7rem;
 }
@@ -82,12 +82,12 @@ div.footer-address > p {
   margin: 0 2rem 0 0;
 }
 
-div.footer-links {
+.footer-links {
   display: flex;
   flex-direction: column;
 }
 
-div.footer-links > p {
+.footer-links > p {
   margin: 0;
 }
 
@@ -101,7 +101,7 @@ footer > row-bottom {
   background-color: rgb(248 248 248);
 }
 
-div.footer-bottom-links > a {
+.footer-bottom-links > a {
   text-decoration: none;
   color: gray;
   font-size: 0.75rem;
@@ -175,13 +175,10 @@ button.hero {
   margin: 0 0 2rem;
 }
 
-div.past-clients {
+.past-clients {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-}
-
-.past-clients {
   font-size: 0.9rem;
 }
 
@@ -275,4 +272,55 @@ a.product-html-link {
 
 h2.product-text {
   font-weight: lighter;
+}
+
+/* implementation.html start */
+
+.implementation-header-background {
+  background-image: url("images/implementation/implementation-header.jpg");
+  background-size: cover;
+  background-position: ;
+  width: 850px;
+  height: 450px;
+  filter: brightness(75%);
+  margin: 0 2rem;
+}
+
+.roi-title {
+  font-size: 0.9rem;
+  font-weight: lighter;
+}
+
+.implementation-calculate-roi-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.roi-step-header-row {
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+}
+
+.roi-step-header-row > h1 {
+  font-family: Tiempos, serif;
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+
+.roi-step-header-row > p {
+  font-family: Avenir, sans-serif;
+  font-size: 1.1rem;
+  padding-left: 0.8rem;
+}
+
+.roi-step-container {
+  width: 65%;
+  margin: 1rem 0;
+}
+
+.roi-step-text {
+  font-family: Avenir, sans-serif;
+  line-height: 1.25rem;
 }

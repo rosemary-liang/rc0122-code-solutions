@@ -31,3 +31,7 @@
   font-family: Avenir, sans-serif;
   font-style: italic;
 }
+
+.gray-font {
+  color: rgb(83 83 83);
+}
