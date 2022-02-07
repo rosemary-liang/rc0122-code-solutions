@@ -307,6 +307,7 @@ h2.product-text {
   font-family: Tiempos, serif;
   font-weight: 500;
   font-size: 1.7rem;
+  color: rgb(68 66 66);
 }
 
 .roi-step-header-row > p {
@@ -322,5 +323,163 @@ h2.product-text {
 
 .roi-step-text {
   font-family: Avenir, sans-serif;
+  line-height: 1.25rem;
+}
+
+/* about-us.html start */
+
+.about-us-header-background {
+  background-image: url("images/about-us/about-us-header.jpg");
+  background-size: cover;
+  background-position: right 50% bottom 60%;
+  width: 850px;
+  height: 420px;
+  filter: brightness(75%);
+  margin: 0 2rem;
+}
+
+.about-us-hero-text-container {
+  position: absolute;
+  top: 0;
+  height: 400px;
+  color: white;
+  padding: 4rem 0;
+}
+
+h1.sub-article-hero-about-us {
+  letter-spacing: 0.02rem;
+  font-size: 1.75rem;
+  font-weight: lighter;
+  padding: 3rem 0 0 3rem;
+}
+
+p.sub-article-hero-about-us {
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  padding: 1rem 3rem;
+  letter-spacing: 0.01rem;
+  width: 65%;
+}
+
+.what-we-believe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.what-we-believe-text-container > p {
+  line-height: 1.5rem;
+}
+
+.about-us-html-link {
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 0.9rem;
+  color: rgb(48 48 117);
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team > h2 {
+  color: rgb(43 42 42);
+  font-family: Tiempos, serif;
+  font-weight: 500;
+  margin: 2rem 0 0;
+}
+
+.main-team-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.team-sub-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.person-container {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.8rem;
+}
+
+.person-image-container {
+  width: 10rem;
+  height: auto;
+}
+
+.team-person-img {
+  width: 10rem;
+  height: auto;
+  border-radius: 50%;
+}
+
+.person-name > h2 {
+  font-family: Tiempos, serif;
+  font-weight: 500;
+  margin-bottom: 0;
+  color: rgb(43 42 42);
+}
+
+.person-job-title > p {
+  font-family: Avenir, sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.clinical-advisory-board-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 2rem 4rem;
+}
+
+.clinical-advisory-board-container > h2 {
+  font-family: Tiempos, serif;
+  font-weight: 500;
+  color: rgb(43 42 42);
+}
+
+.clinical-advisory-board-members {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.clinical-advisory-board-members > p {
+  flex-basis: 33%;
+  font-family: Avenir, sans-serif;
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 0 0.6rem;
+}
+
+.our-story-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.our-story-text > h2 {
+  letter-spacing: 0.02rem;
+  font-size: 1.75rem;
+  font-weight: lighter;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.our-story-text > p {
+  font-family: Avenir, sans-serif;
+  font-size: 0.9rem;
+  padding: 0 0.6rem;
   line-height: 1.25rem;
 }

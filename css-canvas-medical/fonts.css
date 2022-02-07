@@ -33,5 +33,9 @@
 }
 
 .gray-font {
-  color: rgb(83 83 83);
+  color: rgb(105 104 104);
+}
+
+.dark-gray-font {
+  color: rgb(68 66 66);
 }
