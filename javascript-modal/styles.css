@@ -12,7 +12,7 @@
   box-shadow: 0 1px 2px 1px rgb(42 3 134);
 }
 
-.modal {
+.modal-on {
   position: absolute;
   z-index: 1;
   width: 100vw;
@@ -23,6 +23,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.modal-off {
+  display: none;
 }
 
 .modal-content {
