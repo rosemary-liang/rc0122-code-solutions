@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 100%;
+}
+
+.button:active {
+  transform: translateY(0.2rem);
+}
+
+main.turn-on {
+  background-color: rgb(245 243 236 / 94.5%);
+}
+
+button.turn-on {
+  border: none;
+  background-color: rgb(250 234 90 / 90.4%);
+}
+
+main.turn-off {
+  background-color: black;
+}
+
+button.turn-off {
+  border: none;
+  background-color: rgb(32 32 32);
+}
