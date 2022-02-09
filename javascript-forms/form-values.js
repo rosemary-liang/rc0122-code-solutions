@@ -9,4 +9,5 @@ $submit.addEventListener('submit', function (event) {
   submittedValues.message = $submit.elements.message.value;
 
   console.log(submittedValues);
+  $submit.reset();
 });
