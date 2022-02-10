@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 50vh;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+span {
+  display: inline-block;
+  width: 10px;
+}
+
+.current,
+.incorrect {
+  border-bottom: 2px solid;
+  padding: 0 0 0.5rem;
+}
+
+.correct {
+  color: black;
+}
+
+.incorrect {
+  color: red;
+}
+
+.completed {
+  color: rgb(15 238 15);
+}
