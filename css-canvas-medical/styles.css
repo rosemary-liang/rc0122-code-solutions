@@ -483,3 +483,40 @@ p.sub-article-hero-about-us {
   padding: 0 0.6rem;
   line-height: 1.25rem;
 }
+
+/* blog.html start */
+
+.blog-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+
+.blog-small-container {
+  flex-basis: 50%;
+  width: 300px;
+}
+
+.blog-small-container > img {
+  width: 380px;
+  height: 230px;
+}
+
+.blog-small-container > h2 {
+  font-size: 1.6rem;
+  margin: 0.8rem 0.2rem;
+  width: 380px;
+}
+
+.blog-small-container > p {
+  font-size: 0.9rem;
+  margin: 0 0 2.5rem;
+}
