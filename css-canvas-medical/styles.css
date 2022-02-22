@@ -279,7 +279,8 @@ h2.product-text {
 .implementation-header-background {
   background-image: url("images/implementation/implementation-header.jpg");
   background-size: cover;
-  background-position: ;
+
+  /* background-position: ; */
   width: 850px;
   height: 450px;
   filter: brightness(75%);
@@ -486,18 +487,68 @@ p.sub-article-hero-about-us {
 
 /* blog.html start */
 
-.blog-page-container {
+.form-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.form-container > h2 {
+  font-size: 2rem;
+  margin: 2rem 0 1rem;
+}
+
+.form-container > p {
+  margin: 0 0 2rem;
+}
+
+.form-container > input {
+  border-style: hidden hidden groove;
+  width: 500px;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 0 0 0.5rem;
+  letter-spacing: 0;
+  margin: 0 0 2rem;
+}
+
+.form-container > input::placeholder {
+  color: rgb(212 209 209);
+  opacity: 1;
+}
+
+.form-container > input:focus {
+  outline: none;
+}
+
+.form-container > input:focus::placeholder {
+  color: transparent;
+}
+
+button.subscribe {
+  background-color: rgb(5 17 44 / 80.1%);
+  color: white;
+  padding: 0.75rem 2.2rem;
+  border: none;
+  border-radius: 0.2rem;
+  margin: 1rem 0 2rem;
+  font-size: 0.9rem;
+}
+
+.blog-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
 .blog-main-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 1rem;
+  margin: 1rem;
 }
 
 .blog-small-container {
@@ -519,4 +570,8 @@ p.sub-article-hero-about-us {
 .blog-small-container > p {
   font-size: 0.9rem;
   margin: 0 0 2.5rem;
+}
+
+hr {
+  border-top: 15px gray;
 }
