@@ -28,6 +28,7 @@ a.button {
   padding: 0.5rem 0.6rem;
   border: none;
   border-radius: 0.2rem;
+  cursor: pointer;
 }
 
 /* header end */
@@ -504,7 +505,7 @@ p.sub-article-hero-about-us {
 }
 
 .form-container > input {
-  border-style: hidden hidden groove;
+  border-style: hidden hidden solid;
   width: 500px;
   font-size: 1.4rem;
   text-align: center;
@@ -513,20 +514,21 @@ p.sub-article-hero-about-us {
   margin: 0 0 2rem;
 }
 
-.form-container > input::placeholder {
+input::placeholder {
   color: rgb(212 209 209);
   opacity: 1;
 }
 
-.form-container > input:focus {
+input:focus {
   outline: none;
 }
 
-.form-container > input:focus::placeholder {
+input:focus::placeholder {
   color: transparent;
 }
 
-button.subscribe {
+button.subscribe,
+button.submit {
   background-color: rgb(5 17 44 / 80.1%);
   color: white;
   padding: 0.75rem 2.2rem;
@@ -534,6 +536,7 @@ button.subscribe {
   border-radius: 0.2rem;
   margin: 1rem 0 2rem;
   font-size: 0.9rem;
+  cursor: pointer;
 }
 
 .blog-page-container {
@@ -575,5 +578,3 @@ button.subscribe {
 hr {
   border-top: 15px gray;
 }
-
-/* test */
