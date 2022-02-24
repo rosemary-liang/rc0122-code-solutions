@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Carousel</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row img-one">
+      <div class="arrow-button-container">
+        <button class="arrow" id="arrow-left">&#60;</button>
+      </div>
+      <img src="images/001.png" alt="001" class="visible" id="img-one">
+      <img src="images/004.png" alt="004" class="hidden" id="img-two">
+      <img src="images/007.png" alt="007" class="hidden" id="img-three">
+      <img src="images/025.png" alt="025" class="hidden" id="img-four">
+      <img src="images/039.png" alt="039" class="hidden" id="img-five">
+      <div class="button-container">
+        <button class="arrow" id="arrow-right">&#62;</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="dot-button-container">
+        <button class="dot current" id="dot-one"></button>
+        <button class="dot" id="dot-two"></button>
+        <button class="dot" id="dot-three"></button>
+        <button class="dot" id="dot-four"></button>
+        <button class="dot" id="dot-five"></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
