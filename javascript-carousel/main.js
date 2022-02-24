@@ -2,6 +2,7 @@
 var $images = document.querySelectorAll('img');
 var $dots = document.querySelectorAll('button.dot');
 var $dotButtonContainer = document.querySelector('.dot-button-container');
+var stepNextId = null;
 
 function stepNext() {
   toggleRight($images, 'visible', 'hidden');
@@ -38,7 +39,7 @@ function toggleLeft(nodeList, current, notCurrent) {
   }
 }
 
-setInterval(stepNext, 3000);
+stepNextId = setInterval(stepNext, 3000);
 
 var $arrowLeft = document.querySelector('#arrow-left');
 var $arrowRight = document.querySelector('#arrow-right');
@@ -63,6 +64,8 @@ function steptoDot(event) {
         $images[i].className = 'hidden';
       }
     }
+    clearInterval(stepNextId);
+    stepNextId = setInterval(stepNext, 3000);
   }
 }
 
