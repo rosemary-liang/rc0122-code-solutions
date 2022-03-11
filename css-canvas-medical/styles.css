@@ -116,12 +116,15 @@ p.prefer-canvas {
   font-size: 0.8rem;
 }
 
-button.get-started {
+a.get-started {
   background-color: rgb(19 45 102 / 80.1%);
   color: white;
   padding: 0.75rem 2.2rem;
   border: none;
   border-radius: 0.2rem;
+  text-decoration: none;
+  font-family: Avenir, sans-serif;
+  font-size: 0.9rem;
 }
 
 button.learn-more {
@@ -277,7 +280,8 @@ h2.product-text {
 
 p.sub-article-hero-about-us {
   line-height: 1.3rem;
-  letter-spacing: 0.01rem;
+  font-size: 0.8rem;
+  width: 58%;
 }
 
 .what-we-believe-container {
@@ -287,13 +291,14 @@ p.sub-article-hero-about-us {
 }
 
 .what-we-believe-text-container > p {
-  line-height: 1.5rem;
+  line-height: 1.25rem;
+  font-size: 0.8rem;
 }
 
 .about-us-html-link {
   text-decoration: none;
   font-weight: bolder;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: rgb(48 48 117);
 }
 
@@ -307,7 +312,7 @@ p.sub-article-hero-about-us {
   color: rgb(43 42 42);
   font-family: Tiempos, serif;
   font-weight: 500;
-  margin: 2rem 0 0;
+  margin: 3rem 0 0;
 }
 
 .main-team-container {
@@ -399,9 +404,10 @@ p.sub-article-hero-about-us {
 
 .our-story-text > p {
   font-family: Avenir, sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   padding: 0 0.6rem;
   line-height: 1.25rem;
+  color: gray;
 }
 
 /* blog.html start */
@@ -462,18 +468,19 @@ button.submit {
 
 .blog-small-container {
   flex-basis: 45%;
-  width: 290px;
+  width: 250px;
 }
 
 .blog-small-container > img {
-  width: 370px;
-  height: 220px;
+  width: 350px;
+  height: 200px;
 }
 
 .blog-small-container > h2 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   margin: 0.8rem 0.2rem;
-  width: 380px;
+  width: 360px;
+  color: rgb(16 16 109 / 84.2%);
 }
 
 .blog-small-container > p {

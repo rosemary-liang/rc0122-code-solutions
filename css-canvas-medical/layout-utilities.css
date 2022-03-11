@@ -188,8 +188,12 @@ header {
   font-size: 1.5rem;
 }
 
-.line-height-11-rem {
-  line-height: 1.1rem;
+.font-weight-bold {
+  font-weight: bolder;
+}
+
+.line-height-12-rem {
+  line-height: 1.3rem;
 }
 
 .line-height-075-rem {
@@ -304,6 +308,10 @@ header {
   margin: 1rem;
 }
 
+.marginleft4rem {
+  margin-left: 4rem;
+}
+
 .margintop05rem {
   margin-top: 0.5rem;
 }
@@ -324,8 +332,24 @@ header {
   margin: 3rem 0;
 }
 
+.marginv4rem {
+  margin: 4rem 0;
+}
+
+.marginbottom3rem {
+  margin-bottom: 3rem;
+}
+
 .margintop3rem {
   margin: 3rem 0 0;
+}
+
+.margintop6rem {
+  margin: 6rem 0 0;
+}
+
+.margintop7rem {
+  margin: 7rem 0 0;
 }
 
 .margin-past-clients {
