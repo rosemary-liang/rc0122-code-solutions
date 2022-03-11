@@ -30,46 +30,50 @@
         </nav>
       </div>
     </header>
-    <!-- email address form -->
-    <div class="row margintop3rem blog-page-container padding">
-      <form action="" class="blog col-6">
-        <div class="form-container">
-          <h2 class="tiempos dark-gray-font ">Canvas Medical News and Insights</h2>
-          <p class="avenir gray-font font-size-08-rem">Subscribe for updates, data, and essay on American primary care</p>
-          <input type="email" name="email" id="email" placeholder="Enter your email address">
-          <div>
-            <button class="subscribe button-bg-dark-blue font-white cursor-pointer font-size-09-rem border-radius-02-rem border-none button-padding-large">Subscribe</button>
-          </div>
-        </div>
+    <!-- main container -->
+    <div class="row display-flex  align-content-center justify-content-center marginv4rem">
+      <div class="info-container flex-basis-50 ">
+        <h2 class="tiempos font-dark-gray font-size-14-rem">Get in touch with Canvas</h2>
+        <p class="phone-number avenir font-blue font-size-12-rem">(800) 555-5555</p>
+        <p class="blurb avenir col-7 font-size-09-rem font-dark-gray line-height-12-rem">We would be delighted to show you a demo, put you in touch with
+          current customers, get you started with access to a sandbox, and answer any questions
+          you have about working with Canvas.</p>
+      </div>
+      <form action="" class=" contact-us display-flex flex-direction-column align-items-center flex-basis-50 ">
+        <input
+        required
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Name">
+        <input
+        required
+        type="text"
+        name="practice-name"
+        id="practice-name"
+        placeholder="Practice Name">
+        <input
+        required
+        type="email"
+        name="email"
+        id="email"
+        placeholder="email@domain.com">
+        <input
+        type="text"
+        name="phone"
+        id="phone"
+        placeholder="Phone (optional)">
+        <textarea
+        name="tell-us-more"
+        id="tell-us-more"
+        rows="3"
+        placeholder="Tell us more about your practice and interest in Canvas. (optional)"></textarea>
+        <button class="contact-us-submit col-2 font-size-08-rem button-bg-dark-blue font-white button-padding-small border-none border-radius-02-rem cursor-pointer">Submit</button>
+
       </form>
-    </div>
-    <div class="blog-main-container padding2rem display-flex flex-wrap space-between margin1rem">
-      <a href="#blog-1" class="blog-small-container cursor-pointer text-decoration-none">
-        <img src="images/blog/blog-1.jpg" alt="blog-1">
-        <h2 class="tiempos dark-gray-font">The Crucial Role of Primary Care in Creating a Workable Health System for All Americans</h2>
-        <p class="avenir gray-font">August 14, 2018 by Julian Malinak</p>
-      </a>
-      <a href="#blog-2" class="blog-small-container cursor-pointer text-decoration-none">
-        <img src="images/blog/blog-2.jpg" alt="blog-2">
-        <h2 class="tiempos dark-gray-font">Independent Primary Care: Getting More Value for the Healthcare Dollar</h2>
-        <p class="avenir gray-font">June 19, 2018 by Julian Malinak</p>
-      </a>
-      <a href="#blog-3" class="blog-small-container cursor-pointer text-decoration-none">
-        <img src="images/blog/blog-3.jpg" alt="blog-3">
-        <h2 class="tiempos dark-gray-font">Mending the Fabric of Primary Care</h2>
-        <p class="avenir gray-font">March 27, 2018 by Julian Malinak</p>
-      </a>
-      <a href="#blog-4" class="blog-small-container cursor-pointer text-decoration-none">
-        <img src="images/blog/blog-4.png" alt="blog-4">
-        <h2 class="tiempos dark-gray-font">Launching the Primary Care Platform</h2>
-        <p class="avenir gray-font">March 27, 2018 by Julian Malinak</p>
-      </a>
+
 
     </div>
-
-
-
-
     <hr>
     <div class="row marginv1rem">
       <!-- learn more get started section -->
@@ -126,5 +130,8 @@
             Us</a>
         </div>
     </footer>
-  </body>
+  </div>
+
+
+</body>
 </html>

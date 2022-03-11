@@ -11,54 +11,15 @@ img.logo {
   height: 40px;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-}
-
-nav > a {
-  text-decoration: none;
-  color: gray;
-}
-
-a.button {
-  background-color: rgb(5 17 44 / 80.1%);
-  text-decoration: none;
-  color: white;
-  padding: 0.5rem 0.6rem;
-  border: none;
-  border-radius: 0.2rem;
-}
-
 /* header end */
 
 /* learn more start */
 
-.row-learn-more {
-  display: flex;
-  align-items: center;
-}
-
-.sub-article-learn-more > h2 {
-  font-size: 1.5rem;
-  font-weight: lighter;
-  color: rgb(2 2 2);
-}
-
-.sub-article-learn-more > p {
-  font-size: 0.8rem;
-  color: rgb(95 93 93);
-}
-
 /* footer start */
 
 footer > .row-main {
-  display: flex;
-  justify-content: space-evenly;
   background-color: rgb(34 38 39 / 80.1%);
-  color: white;
-  height: 360px;
-  align-items: center;
+  height: 300px;
 }
 
 img.logo-white {
@@ -66,45 +27,8 @@ img.logo-white {
   width: auto;
 }
 
-.footer-address > p {
-  font-size: 0.75rem;
-  line-height: 0.7rem;
-}
-
-.article-footer-links {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-links-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 2rem 0 0;
-}
-
-.footer-links {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-links > p {
-  margin: 0;
-}
-
-.footer-links > a {
-  color: white;
-  text-decoration: none;
-  font-size: 0.75rem;
-}
-
 footer > row-bottom {
   background-color: rgb(248 248 248);
-}
-
-.footer-bottom-links > a {
-  text-decoration: none;
-  color: gray;
-  font-size: 0.75rem;
 }
 
 /* footer end */
@@ -113,13 +37,13 @@ footer > row-bottom {
 
 /* index.html hero image start */
 
-.article-hero {
+.position-relative {
   position: relative;
 }
 
 .hero-background {
   background-image: url("images/hero.jpg");
-  background-size: cover;
+  background-size: 100%;
   width: 850px;
   height: 400px;
   filter: brightness(75%);
@@ -140,18 +64,18 @@ footer > row-bottom {
 h1.sub-article-hero {
   letter-spacing: 0.02rem;
   font-size: 1.75rem;
-  padding: 3rem 0 0 5rem;
+  padding: 3rem 0 0 4rem;
 }
 
 p.sub-article-hero {
   font-size: 0.8rem;
   line-height: 1.3rem;
-  padding: 1rem 5rem;
+  padding: 1rem 4rem;
   letter-spacing: 0.01rem;
 }
 
 button.hero {
-  margin: 1rem 0 1rem 5rem;
+  margin: 1rem 0 1rem 4rem;
   padding: 1rem;
 }
 
@@ -192,12 +116,15 @@ p.prefer-canvas {
   font-size: 0.8rem;
 }
 
-button.get-started {
-  background-color: rgb(5 17 44 / 80.1%);
+a.get-started {
+  background-color: rgb(19 45 102 / 80.1%);
   color: white;
   padding: 0.75rem 2.2rem;
   border: none;
   border-radius: 0.2rem;
+  text-decoration: none;
+  font-family: Avenir, sans-serif;
+  font-size: 0.9rem;
 }
 
 button.learn-more {
@@ -210,8 +137,8 @@ button.learn-more {
 
 .product-header-background {
   background-image: url("images/product/product-header.jpg");
-  background-size: cover;
   background-position: right 20% bottom 35%;
+  background-size: cover;
   width: 850px;
   height: 400px;
   filter: brightness(75%);
@@ -230,13 +157,11 @@ h1.sub-article-hero-product {
   letter-spacing: 0.02rem;
   font-size: 1.75rem;
   font-weight: lighter;
-  padding: 3rem 0 0 3rem;
 }
 
 p.sub-article-hero-product {
   font-size: 0.8rem;
   line-height: 1.3rem;
-  padding: 1rem 3rem;
   letter-spacing: 0.01rem;
 }
 
@@ -260,6 +185,11 @@ p.product-text {
   font-size: 0.8rem;
 }
 
+p.quote-text {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 a.product-html-link {
   text-decoration: none;
   color: rgb(48 48 117);
@@ -272,6 +202,7 @@ a.product-html-link {
 
 h2.product-text {
   font-weight: lighter;
+  font-size: 1.4rem;
 }
 
 /* implementation.html start */
@@ -288,7 +219,7 @@ h2.product-text {
 }
 
 .roi-title {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: lighter;
 }
 
@@ -300,14 +231,14 @@ h2.product-text {
 
 .roi-step-header-row {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   align-content: space-between;
 }
 
 .roi-step-header-row > h1 {
   font-family: Tiempos, serif;
   font-weight: 500;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: rgb(68 66 66);
 }
 
@@ -318,13 +249,14 @@ h2.product-text {
 }
 
 .roi-step-container {
-  width: 65%;
+  width: 60%;
   margin: 1rem 0;
 }
 
 .roi-step-text {
   font-family: Avenir, sans-serif;
-  line-height: 1.25rem;
+  line-height: 1.2rem;
+  font-size: 0.85rem;
 }
 
 /* about-us.html start */
@@ -344,22 +276,12 @@ h2.product-text {
   top: 0;
   height: 400px;
   color: white;
-  padding: 4rem 0;
-}
-
-h1.sub-article-hero-about-us {
-  letter-spacing: 0.02rem;
-  font-size: 1.75rem;
-  font-weight: lighter;
-  padding: 3rem 0 0 3rem;
 }
 
 p.sub-article-hero-about-us {
-  font-size: 0.9rem;
   line-height: 1.3rem;
-  padding: 1rem 3rem;
-  letter-spacing: 0.01rem;
-  width: 65%;
+  font-size: 0.8rem;
+  width: 58%;
 }
 
 .what-we-believe-container {
@@ -369,13 +291,14 @@ p.sub-article-hero-about-us {
 }
 
 .what-we-believe-text-container > p {
-  line-height: 1.5rem;
+  line-height: 1.25rem;
+  font-size: 0.8rem;
 }
 
 .about-us-html-link {
   text-decoration: none;
   font-weight: bolder;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: rgb(48 48 117);
 }
 
@@ -389,7 +312,7 @@ p.sub-article-hero-about-us {
   color: rgb(43 42 42);
   font-family: Tiempos, serif;
   font-weight: 500;
-  margin: 2rem 0 0;
+  margin: 3rem 0 0;
 }
 
 .main-team-container {
@@ -425,6 +348,7 @@ p.sub-article-hero-about-us {
 
 .person-name > h2 {
   font-family: Tiempos, serif;
+  font-size: 1.4rem;
   font-weight: 500;
   margin-bottom: 0;
   color: rgb(43 42 42);
@@ -458,7 +382,7 @@ p.sub-article-hero-about-us {
 .clinical-advisory-board-members > p {
   flex-basis: 33%;
   font-family: Avenir, sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   text-align: center;
   padding: 0 0.6rem;
 }
@@ -480,9 +404,10 @@ p.sub-article-hero-about-us {
 
 .our-story-text > p {
   font-family: Avenir, sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   padding: 0 0.6rem;
   line-height: 1.25rem;
+  color: gray;
 }
 
 /* blog.html start */
@@ -495,7 +420,6 @@ p.sub-article-hero-about-us {
 }
 
 .form-container > h2 {
-  font-size: 2rem;
   margin: 2rem 0 1rem;
 }
 
@@ -504,36 +428,34 @@ p.sub-article-hero-about-us {
 }
 
 .form-container > input {
-  border-style: hidden hidden groove;
-  width: 500px;
+  border-style: hidden hidden solid;
+  border-color: gray;
+  border-width: 1px;
+  width: 400px;
   font-size: 1.4rem;
   text-align: center;
   padding: 0 0 0.5rem;
   letter-spacing: 0;
-  margin: 0 0 2rem;
+  margin: 0 0 1rem;
 }
 
-.form-container > input::placeholder {
+input::placeholder {
   color: rgb(212 209 209);
   opacity: 1;
+  font-size: 1.1rem;
 }
 
-.form-container > input:focus {
+input:focus {
   outline: none;
 }
 
-.form-container > input:focus::placeholder {
+input:focus::placeholder {
   color: transparent;
 }
 
-button.subscribe {
-  background-color: rgb(5 17 44 / 80.1%);
-  color: white;
-  padding: 0.75rem 2.2rem;
-  border: none;
-  border-radius: 0.2rem;
+button.subscribe,
+button.submit {
   margin: 1rem 0 2rem;
-  font-size: 0.9rem;
 }
 
 .blog-page-container {
@@ -544,31 +466,25 @@ button.subscribe {
   margin: 2rem 0;
 }
 
-.blog-main-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 1rem;
-}
-
 .blog-small-container {
-  flex-basis: 50%;
-  width: 300px;
+  flex-basis: 45%;
+  width: 250px;
 }
 
 .blog-small-container > img {
-  width: 380px;
-  height: 230px;
+  width: 350px;
+  height: 200px;
 }
 
 .blog-small-container > h2 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   margin: 0.8rem 0.2rem;
-  width: 380px;
+  width: 360px;
+  color: rgb(16 16 109 / 84.2%);
 }
 
 .blog-small-container > p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin: 0 0 2.5rem;
 }
 
@@ -576,4 +492,25 @@ hr {
   border-top: 15px gray;
 }
 
-/* test */
+/* contact-us.html */
+
+form.contact-us > input,
+form.contact-us > textarea {
+  border: none;
+  border-bottom: 1px solid darkgray;
+  margin: 1rem;
+  text-align: center;
+  font-family: Avenir, sans-serif;
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+  width: 350px;
+}
+
+form.contact-us > textarea::placeholder {
+  color: darkgray;
+  font-size: 1.1rem;
+}
+
+form.contact-us > textarea:focus {
+  outline: none;
+}

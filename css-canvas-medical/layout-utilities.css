@@ -1,6 +1,6 @@
 /* layout classes start */
 .container {
-  width: 900px;
+  width: 850px;
   margin: auto;
   left: 0;
   right: 0;
@@ -10,10 +10,12 @@ header {
   display: flex;
 }
 
-.navbar {
-  font-size: 0.7rem;
-  display: flex;
-  justify-content: flex-end;
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
 }
 
 .col-1,
@@ -75,15 +77,146 @@ header {
   width: 100%;
 }
 
+.display-flex {
+  display: flex;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-content-center {
+  align-content: center;
+}
+
+.flex-basis-50 {
+  flex-basis: 45%;
+}
+
+.flex-basis-40 {
+  flex-basis: 40%;
+}
+
 /* layout classes end */
 
 /* utility classes start */
+.font-dark-gray {
+  color: rgb(95 93 93);
+}
+
+.font-gray {
+  color: gray;
+}
+
+.font-blue {
+  color: rgb(31 31 129);
+}
+
+.font-white {
+  color: white;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.border-none {
+  border: none;
+}
+
+.border-radius-02-rem {
+  border-radius: 0.2rem;
+}
+
+.button-bg-dark-blue {
+  background-color: rgb(19 45 102 / 80.1%);
+}
+
+.button-padding-small {
+  padding: 0.5rem 0.6rem;
+}
+
+.button-padding-large {
+  padding: 0.75rem 2.2rem;
+}
+
+.font-size-07-rem {
+  font-size: 0.7rem;
+}
+
+.font-size-08-rem {
+  font-size: 0.8rem;
+}
+
+.font-size-09-rem {
+  font-size: 0.9rem;
+}
+
+.font-size-12-rem {
+  font-size: 1.2rem;
+}
+
+.font-size-14-rem {
+  font-size: 1.4rem;
+}
+
+.font-size-15-rem {
+  font-size: 1.5rem;
+}
+
+.font-weight-bold {
+  font-weight: bolder;
+}
+
+.line-height-12-rem {
+  line-height: 1.3rem;
+}
+
+.line-height-075-rem {
+  line-height: 0.75rem;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.paddingv05rem {
+  padding: 0.5rem 0;
+}
 
 .padding05rem {
   padding: 0.5rem;
 }
 
 .padding1rem {
+  padding: 0 1rem;
+}
+
+.paddingh1rem {
   padding: 0 1rem;
 }
 
@@ -111,12 +244,36 @@ header {
   padding: 0 2rem;
 }
 
+.padding-left-2-rem {
+  padding-left: 2rem;
+}
+
+.padding-left-3-rem {
+  padding-left: 3rem;
+}
+
+.padding-left-4-rem {
+  padding-left: 4rem;
+}
+
 .paddingbottom2rem {
   padding: 0 0 2rem;
 }
 
+.paddingh3rem {
+  padding: 0 3rem;
+}
+
 .padding3rem {
   padding: 2rem 2rem 0 3rem;
+}
+
+.paddingv6rem {
+  padding: 6rem 0;
+}
+
+.margin-auto {
+  margin: auto;
 }
 
 .margin0 {
@@ -129,6 +286,10 @@ header {
 
 .margin05rem {
   margin: 0.5rem;
+}
+
+.marginh025rem {
+  margin: 0 0.25rem;
 }
 
 .marginv05rem {
@@ -147,6 +308,14 @@ header {
   margin: 1rem;
 }
 
+.marginleft4rem {
+  margin-left: 4rem;
+}
+
+.margintop05rem {
+  margin-top: 0.5rem;
+}
+
 .marginv2rem {
   margin: 2rem 0;
 }
@@ -159,8 +328,28 @@ header {
   margin: 2rem;
 }
 
+.marginv3rem {
+  margin: 3rem 0;
+}
+
+.marginv4rem {
+  margin: 4rem 0;
+}
+
+.marginbottom3rem {
+  margin-bottom: 3rem;
+}
+
 .margintop3rem {
   margin: 3rem 0 0;
+}
+
+.margintop6rem {
+  margin: 6rem 0 0;
+}
+
+.margintop7rem {
+  margin: 7rem 0 0;
 }
 
 .margin-past-clients {
