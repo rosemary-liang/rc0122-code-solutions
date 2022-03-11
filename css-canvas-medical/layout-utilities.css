@@ -75,9 +75,72 @@ header {
   width: 100%;
 }
 
+.display-flex {
+  display: flex;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-content-center {
+  align-content: center;
+}
+
+.flex-basis-50 {
+  flex-basis: 45%;
+}
+
+.flex-basis-40 {
+  flex-basis: 40%;
+}
+
 /* layout classes end */
 
 /* utility classes start */
+.font-dark-gray {
+  color: rgb(95 93 93);
+}
+
+.font-blue {
+  color: rgb(31 31 129);
+}
+
+.font-size-08-rem {
+  font-size: 0.8rem;
+}
+
+.font-size-09-rem {
+  font-size: 0.9rem;
+}
+
+.font-size-12-rem {
+  font-size: 1.2rem;
+}
+
+.font-size-14-rem {
+  font-size: 1.4rem;
+}
+
+.line-height-11-rem {
+  line-height: 1.1rem;
+}
 
 .padding05rem {
   padding: 0.5rem;
@@ -111,12 +174,20 @@ header {
   padding: 0 2rem;
 }
 
+.padding-left-2-rem {
+  padding-left: 2rem;
+}
+
 .paddingbottom2rem {
   padding: 0 0 2rem;
 }
 
 .padding3rem {
   padding: 2rem 2rem 0 3rem;
+}
+
+.margin-auto {
+  margin: auto;
 }
 
 .margin0 {
@@ -157,6 +228,10 @@ header {
 
 .margin2rem {
   margin: 2rem;
+}
+
+.marginv3rem {
+  margin: 3rem 0;
 }
 
 .margintop3rem {

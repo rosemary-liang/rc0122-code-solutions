@@ -21,7 +21,8 @@ nav > a {
   color: gray;
 }
 
-a.button {
+a.button,
+.contact-us-submit {
   background-color: rgb(5 17 44 / 80.1%);
   text-decoration: none;
   color: white;
@@ -577,4 +578,24 @@ button.submit {
 
 hr {
   border-top: 15px gray;
+}
+
+form.contact-us > input,
+form.contact-us > textarea {
+  border: none;
+  border-bottom: 1px solid darkgray;
+  margin: 1rem;
+  text-align: center;
+  font-family: Avenir, sans-serif;
+  font-size: 0.9rem;
+  padding-bottom: 0.5rem;
+  width: 350px;
+}
+
+form.contact-us > textarea::placeholder {
+  color: darkgray;
+}
+
+form.contact-us > textarea:focus {
+  outline: none;
 }
