@@ -135,6 +135,7 @@ button.learn-more {
 .product-header-background {
   background-image: url("images/product/product-header.jpg");
   background-position: right 20% bottom 35%;
+  background-size: cover;
   width: 850px;
   height: 400px;
   filter: brightness(75%);
@@ -153,13 +154,11 @@ h1.sub-article-hero-product {
   letter-spacing: 0.02rem;
   font-size: 1.75rem;
   font-weight: lighter;
-  padding: 3rem 0 0 3rem;
 }
 
 p.sub-article-hero-product {
   font-size: 0.8rem;
   line-height: 1.3rem;
-  padding: 1rem 3rem;
   letter-spacing: 0.01rem;
 }
 
@@ -183,6 +182,11 @@ p.product-text {
   font-size: 0.8rem;
 }
 
+p.quote-text {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 a.product-html-link {
   text-decoration: none;
   color: rgb(48 48 117);
@@ -195,6 +199,7 @@ a.product-html-link {
 
 h2.product-text {
   font-weight: lighter;
+  font-size: 1.4rem;
 }
 
 /* implementation.html start */
@@ -211,7 +216,7 @@ h2.product-text {
 }
 
 .roi-title {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: lighter;
 }
 
@@ -223,14 +228,14 @@ h2.product-text {
 
 .roi-step-header-row {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   align-content: space-between;
 }
 
 .roi-step-header-row > h1 {
   font-family: Tiempos, serif;
   font-weight: 500;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: rgb(68 66 66);
 }
 
@@ -241,13 +246,14 @@ h2.product-text {
 }
 
 .roi-step-container {
-  width: 65%;
+  width: 60%;
   margin: 1rem 0;
 }
 
 .roi-step-text {
   font-family: Avenir, sans-serif;
-  line-height: 1.25rem;
+  line-height: 1.2rem;
+  font-size: 0.85rem;
 }
 
 /* about-us.html start */
@@ -267,22 +273,11 @@ h2.product-text {
   top: 0;
   height: 400px;
   color: white;
-  padding: 4rem 0;
-}
-
-h1.sub-article-hero-about-us {
-  letter-spacing: 0.02rem;
-  font-size: 1.75rem;
-  font-weight: lighter;
-  padding: 3rem 0 0 3rem;
 }
 
 p.sub-article-hero-about-us {
-  font-size: 0.9rem;
   line-height: 1.3rem;
-  padding: 1rem 3rem;
   letter-spacing: 0.01rem;
-  width: 65%;
 }
 
 .what-we-believe-container {
@@ -348,6 +343,7 @@ p.sub-article-hero-about-us {
 
 .person-name > h2 {
   font-family: Tiempos, serif;
+  font-size: 1.4rem;
   font-weight: 500;
   margin-bottom: 0;
   color: rgb(43 42 42);
@@ -381,7 +377,7 @@ p.sub-article-hero-about-us {
 .clinical-advisory-board-members > p {
   flex-basis: 33%;
   font-family: Avenir, sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   text-align: center;
   padding: 0 0.6rem;
 }
@@ -418,7 +414,6 @@ p.sub-article-hero-about-us {
 }
 
 .form-container > h2 {
-  font-size: 2rem;
   margin: 2rem 0 1rem;
 }
 
@@ -428,17 +423,20 @@ p.sub-article-hero-about-us {
 
 .form-container > input {
   border-style: hidden hidden solid;
-  width: 500px;
+  border-color: gray;
+  border-width: 1px;
+  width: 400px;
   font-size: 1.4rem;
   text-align: center;
   padding: 0 0 0.5rem;
   letter-spacing: 0;
-  margin: 0 0 2rem;
+  margin: 0 0 1rem;
 }
 
 input::placeholder {
   color: rgb(212 209 209);
   opacity: 1;
+  font-size: 1.1rem;
 }
 
 input:focus {
@@ -451,14 +449,7 @@ input:focus::placeholder {
 
 button.subscribe,
 button.submit {
-  background-color: rgb(5 17 44 / 80.1%);
-  color: white;
-  padding: 0.75rem 2.2rem;
-  border: none;
-  border-radius: 0.2rem;
   margin: 1rem 0 2rem;
-  font-size: 0.9rem;
-  cursor: pointer;
 }
 
 .blog-page-container {
@@ -469,21 +460,14 @@ button.submit {
   margin: 2rem 0;
 }
 
-.blog-main-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 1rem;
-}
-
 .blog-small-container {
-  flex-basis: 50%;
-  width: 300px;
+  flex-basis: 45%;
+  width: 290px;
 }
 
 .blog-small-container > img {
-  width: 380px;
-  height: 230px;
+  width: 370px;
+  height: 220px;
 }
 
 .blog-small-container > h2 {
@@ -493,13 +477,15 @@ button.submit {
 }
 
 .blog-small-container > p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin: 0 0 2.5rem;
 }
 
 hr {
   border-top: 15px gray;
 }
+
+/* contact-us.html */
 
 form.contact-us > input,
 form.contact-us > textarea {
@@ -508,13 +494,14 @@ form.contact-us > textarea {
   margin: 1rem;
   text-align: center;
   font-family: Avenir, sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding-bottom: 0.5rem;
   width: 350px;
 }
 
 form.contact-us > textarea::placeholder {
   color: darkgray;
+  font-size: 1.1rem;
 }
 
 form.contact-us > textarea:focus {
