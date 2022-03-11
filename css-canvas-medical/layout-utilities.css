@@ -1,6 +1,6 @@
 /* layout classes start */
 .container {
-  width: 900px;
+  width: 850px;
   margin: auto;
   left: 0;
   right: 0;
@@ -8,12 +8,6 @@
 
 header {
   display: flex;
-}
-
-.navbar {
-  font-size: 0.7rem;
-  display: flex;
-  justify-content: flex-end;
 }
 
 .col-1,
@@ -95,6 +89,14 @@ header {
   justify-content: center;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
 .align-items-center {
   align-items: center;
 }
@@ -118,8 +120,40 @@ header {
   color: rgb(95 93 93);
 }
 
+.font-gray {
+  color: gray;
+}
+
 .font-blue {
   color: rgb(31 31 129);
+}
+
+.font-white {
+  color: white;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.border-none {
+  border: none;
+}
+
+.border-radius-02-rem {
+  border-radius: 0.2rem;
+}
+
+.button-bg-dark-blue {
+  background-color: rgb(19 45 102 / 80.1%);
+}
+
+.button-padding-small {
+  padding: 0.5rem 0.6rem;
+}
+
+.font-size-07-rem {
+  font-size: 0.7rem;
 }
 
 .font-size-08-rem {
@@ -140,6 +174,18 @@ header {
 
 .line-height-11-rem {
   line-height: 1.1rem;
+}
+
+.line-height-075-rem {
+  line-height: 0.75rem;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.paddingv05rem {
+  padding: 0.5rem 0;
 }
 
 .padding05rem {
@@ -202,6 +248,10 @@ header {
   margin: 0.5rem;
 }
 
+.marginh025rem {
+  margin: 0 0.25rem;
+}
+
 .marginv05rem {
   margin: 0.5rem 0;
 }
@@ -216,6 +266,14 @@ header {
 
 .margin1rem {
   margin: 1rem;
+}
+
+.margintop05rem {
+  margin-top: 0.5rem;
+}
+
+.marginr2rem {
+  margin-right: 2rem;
 }
 
 .marginv2rem {

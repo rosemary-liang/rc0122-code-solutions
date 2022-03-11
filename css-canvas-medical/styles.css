@@ -11,56 +11,15 @@ img.logo {
   height: 40px;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-}
-
-nav > a {
-  text-decoration: none;
-  color: gray;
-}
-
-a.button,
-.contact-us-submit {
-  background-color: rgb(5 17 44 / 80.1%);
-  text-decoration: none;
-  color: white;
-  padding: 0.5rem 0.6rem;
-  border: none;
-  border-radius: 0.2rem;
-  cursor: pointer;
-}
-
 /* header end */
 
 /* learn more start */
 
-.row-learn-more {
-  display: flex;
-  align-items: center;
-}
-
-.sub-article-learn-more > h2 {
-  font-size: 1.5rem;
-  font-weight: lighter;
-  color: rgb(2 2 2);
-}
-
-.sub-article-learn-more > p {
-  font-size: 0.8rem;
-  color: rgb(95 93 93);
-}
-
 /* footer start */
 
 footer > .row-main {
-  display: flex;
-  justify-content: space-evenly;
   background-color: rgb(34 38 39 / 80.1%);
-  color: white;
-  height: 360px;
-  align-items: center;
+  height: 300px;
 }
 
 img.logo-white {
@@ -68,45 +27,8 @@ img.logo-white {
   width: auto;
 }
 
-.footer-address > p {
-  font-size: 0.75rem;
-  line-height: 0.7rem;
-}
-
-.article-footer-links {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-links-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 2rem 0 0;
-}
-
-.footer-links {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-links > p {
-  margin: 0;
-}
-
-.footer-links > a {
-  color: white;
-  text-decoration: none;
-  font-size: 0.75rem;
-}
-
 footer > row-bottom {
   background-color: rgb(248 248 248);
-}
-
-.footer-bottom-links > a {
-  text-decoration: none;
-  color: gray;
-  font-size: 0.75rem;
 }
 
 /* footer end */
@@ -115,13 +37,13 @@ footer > row-bottom {
 
 /* index.html hero image start */
 
-.article-hero {
+.position-relative {
   position: relative;
 }
 
 .hero-background {
   background-image: url("images/hero.jpg");
-  background-size: cover;
+  background-size: 100%;
   width: 850px;
   height: 400px;
   filter: brightness(75%);
@@ -142,18 +64,18 @@ footer > row-bottom {
 h1.sub-article-hero {
   letter-spacing: 0.02rem;
   font-size: 1.75rem;
-  padding: 3rem 0 0 5rem;
+  padding: 3rem 0 0 4rem;
 }
 
 p.sub-article-hero {
   font-size: 0.8rem;
   line-height: 1.3rem;
-  padding: 1rem 5rem;
+  padding: 1rem 4rem;
   letter-spacing: 0.01rem;
 }
 
 button.hero {
-  margin: 1rem 0 1rem 5rem;
+  margin: 1rem 0 1rem 4rem;
   padding: 1rem;
 }
 
@@ -195,7 +117,7 @@ p.prefer-canvas {
 }
 
 button.get-started {
-  background-color: rgb(5 17 44 / 80.1%);
+  background-color: rgb(19 45 102 / 80.1%);
   color: white;
   padding: 0.75rem 2.2rem;
   border: none;
@@ -212,7 +134,6 @@ button.learn-more {
 
 .product-header-background {
   background-image: url("images/product/product-header.jpg");
-  background-size: cover;
   background-position: right 20% bottom 35%;
   width: 850px;
   height: 400px;
