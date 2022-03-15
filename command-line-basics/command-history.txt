@@ -1,0 +1,277 @@
+    1  whoami
+    2  exit
+    3  whoami
+    4  git config --global user.name "Rosemary Liu"
+    5  git config --global user.email "rliu18@gmail.com"
+    6  git config --global --list
+    7  exit
+    8  whoami
+    9  cd ~/repos
+   10  cd ajax-project
+   11  git branch--list
+   12  git branch --list
+   13  git branch issue-1-user-can-generate-list
+   14  git siwtch issue-1-user-can-generage-list
+   15  git switch issue-1-user-can-generage-list
+   16  git switch issue-1-user-can-generate-list
+   17  git add .
+   18  git commit -m "Completed header html and css."
+   19  git push origin issue-1-user-can-generate-list
+   20  git add .
+   21  git commit -m "Added html structure for modal."
+   22  git add .
+   23  git commit -m "Added html structure for modal."
+   24  git push origin issue-1-user-can-generate-list
+   25  git add / 
+   26  git add .
+   27  git commit -m "Completed question grid layout html and css"
+   28  git push origin issue-1-user-can-generate-list
+   29  git add .
+   30  git commit -m "Completed function to populate data model from xhr response."
+   31  git add .
+   32  git commit -m "Completed function to populate data model from xhr response."
+   33  git push origin issue-1-user-can-generate-list
+   34  git add .
+   35  git commit -m "displayClue function works when a question button is clicked."
+   36  git push origin issue-1-user-can-generate-list
+   37  git add .
+   38  git commit -m "Minor clean up for feature 1"
+   39  git push origin issue-1-user-can-generate-list
+   40  exit
+   41  whoami
+   42  cd ~/repos
+   43  cd ajax-project
+   44  git add .
+   45  git commit -m "Feature 1 fit to mobile and desktop screens."
+   46  git push origin issue-1-user-can-generate-list
+   47  git add .
+   48  git commit -m "Add event listener on background overlay, which will return to questions view upon 'click'."
+   49  git push origin issue-1-user-can-generate-list
+   50  git switch master
+   51  git branch issue-2-user-can-answer-question
+   52  git switch issue-2-user-can-answer question
+   53  git switch issue-2-user-can-answer-question
+   54  git add .
+   55  git commit -m "Add event listener on background overlay, which will return to questions view upon 'click'."
+   56  git switch master
+   57  git pull origin master
+   58  git switch issue-1-user-can-generate-list
+   59  git switch issue-2-user-can-answer-question
+   60  git switch master
+   61  git branch --list
+   62  git branch -d issue-2-user-can-answer-question
+   63  git switch issue-1-user-can-generage-list
+   64  git switch issue-1-user-can-generate-list
+   65  git checkout master
+   66  git switch issue-1-user-can-generate-list
+   67  git reset --soft HEAD^
+   68  git stash
+   69  git switch master
+   70  git branch issue-2-user-can-answer-question
+   71  git switch issue-2-user-can-answer-question
+   72  git stash apply
+   73  git add .
+   74  git commit -m "Add event listener on background overlay, which will return to questions view upon 'click'."
+   75  git push origin issue-2-user-can-answer-question
+   76  git add .
+   77  git commit -m "Add custom attribute to include data-modal: question, data-modal: answer, data-modal: answered. Add view and hidden classes to modal elements to correspond with their custom attributes."
+   78  git add .
+   79  git commit -m "Add event listener on modal card, which will display answer view upon 'click'."
+   80  git push origin issue-2-user-can-answer-question
+   81  git add .
+   82  git commit -m " Add event listener on 'YES' button. If clicked, update the array item's completed property value as yes and update data.score and data.questionsCorrect array. Close the modal."
+   83  git push origin issue-2-user-can-answer-question
+   84  git add .
+   85  git commit -m "Add event listener on 'NO' button. If clicked, update item's 'completed' property as 'yes' and close the modal."
+   86  git push origin issue-2-user-can-answer-question
+   87  git add .
+   88  git commit -m "If 'YES' is clicked, update header to reflect Questions Correct and Score."
+   89  git push origin issue-2-user-can-answer-question
+   90  git add .
+   91  git commit -m "Verify that all cards with the completed property value yes are gray."
+   92  git add .
+   93  git commit -m "Verify that all cards with the completed property value yes are gray."
+   94  git add .
+   95  git commit -m "Added resetView function to reset card view when modal opens."
+   96  git add .
+   97  git commit -m "Added resetView function to reset card view when modal opens."
+   98  git add .
+   99  git commit -m "Added resetView function to reset card view when modal opens."
+  100  git add .
+  101  git commit -m "Added resetView function to reset card view when modal opens."
+  102  git push origin issue-2-user-can-answer-question
+  103  exit
+  104  whoami
+  105  cd ~/repos
+  106  cd ajax-project
+  107  git add . 
+  108  git commit -m 
+  109  git commit -m "When completed cards are clicked, open modal and show button to return to questions."
+  110  git add .
+  111  git commit -m "Formatted return to questions view on modal card."
+  112  git push origin issue-2-user-can-answer-question
+  113  git add .
+  114  git commit -m "Add event listener on return to questions button and confirm it resets the modal view."
+  115  git push origin issue-2-user-can-answer-question
+  116  git add .
+  117  git commit -m "Updated reset function to fix bugs when subsequent cards are selected."
+  118  git push origin issue-2-user-can-answer-question
+  119  git add .
+  120  git commit -m "Change favorites and questionsCorrect array to be reflected as properties of 'data.clues'."
+  121  git add .
+  122  git commit -m "Change favorites and questionsCorrect array to be reflected as properties of 'data.clues'."
+  123  git push origin issue-2-user-can-answer-question
+  124  git add .
+  125  git commit -m "Add event listener on star icon (favorites) to listen for 'click'. Change background fill to yellow or gray. Update clue's 'favorite' property."
+  126  git push origin issue-2-user-can-answer-question
+  127  git add .
+  128  git commit -m "Added countCorrect function to count number of correct questions and update the header."
+  129  git push origin issue-2-user-can-answer-question
+  130  git add .
+  131  git comit -m "Set up local storage and added loadFromStorage function to restore visible styling upon refresh."
+  132  git commit -m "Set up local storage and added loadFromStorage function to restore visible styling upon refresh."
+  133  git push origin issue-2-user-can-answer-question
+  134  git add .
+  135  git commit -m " Confirm that the user interface looks natural on both mobile and desktop screens."
+  136  git push origin issue-2-user-can-answer-question
+  137  git add .
+  138  git commit -m "Adjusted height of .card for mobile."
+  139  git push origin issue-2-user-can-answer-question
+  140  git switch master
+  141  git pull origin master
+  142  git branch -d issue-2-user-can-answer-question
+  143  git branch --list
+  144  git branch -d issue-1-user-can-generate-list
+  145  git branch issue-3-user-can-view-questions-answered-correctly
+  146  git switch issue-3-user-can-view-questions-answered-correctly
+  147  exit
+  148  cd ~/repos/ajax-project
+  149  git add .
+  150  git commit -m "Set up custom attributes to include data-view: favorites."
+  151  git push origin issue-4-user-can-view-favorites
+  152  git add .
+  153  git commit -m "Create function to render DOM tree for all items in data.clues with favorite: true."
+  154  git add .
+  155  git commit -m "Create function to render DOM tree for all items in data.clues with favorite: true."
+  156  git push origin issue-4-user-can-view-favorites
+  157  git add .
+  158  git commit -m "Fixed view swapping."
+  159  git push origin issue-4-user-can-view-favorites
+  160  git add .
+  161  git commit -m "Added functions navButtonBlue and navButtonBlack to control header button font when view is active or inactive."
+  162  git push origin issue-4-user-can-view-favorites
+  163  git .
+  164  git commit -m "Add functionality to star icon to allow user to favorite and un-favorite cards that appear."
+  165  git add .
+  166  git commit -m "Add functionality to star icon to allow user to favorite and un-favorite cards that appear."
+  167  git push origin issue-4-user-can-view-favorites
+  168  git add .
+  169  git commit -m "Add star functionality of color and updating of data.clues.favorite to the cards on the Questions Correct view."
+  170  git push origin issue-4-user-can-view-favorites
+  171  git add .
+  172  git commit -m "Added reRenderFavorites function to see updated Favorites page without refreshing."
+  173  git push origin issue-4-user-can-view-favorites
+  174  git restore
+  175  git restore .
+  176  git add .
+  177  git commit -m "Split handleFavoriteinCardList function into two functions due to different data-entryid attributes. Allowed the yellow star to be toggled from both the Questions Correct and Favorites views."
+  178  git push origin issue-4-user-can-view-favorites
+  179  git add .
+  180  git commit -m "Feature 4 bug fixes."
+  181  git push origin issue-4-user-can-view-favorites
+  182  git add .
+  183  git commit -m "Fixed bug so star icon toggled in Favorites view will be reflected accordingly in Questions Correct view."
+  184  git push origin issue-4-user-can-view-favorites
+  185  git switch  master
+  186  git pull origin master
+  187  git branch issue-5-user-can-reset-questions
+  188  git branch --list
+  189  git branch -d issue-3-user-can-view-questions-answered-correctly
+  190  git branch -d issue-4-user-can-view-favorites
+  191  exit
+  192  cd ~/repos/rc0122-code-solutions
+  193  git status
+  194  git add es6-arrow-functions
+  195  git commit -m "Completed es6-arrow-functions exercise."
+  196  git switch master
+  197  git switch es6-arrow-function
+  198  git switch es6-arrow-functions
+  199  git push origin es6-arrow-functions
+  200  git switch master
+  201  git branch command-line-basics
+  202  git switch command-line-basics
+  203  pwd
+  204  man man
+  205  man cat
+  206  cat -A laziness.txt
+  207  man cat
+  208  cat laziness.txt
+  209  man cat
+  210  cat laziness.txt
+  211  man cat
+  212  cd command-line-basics
+  213  cat laziness.txt
+  214  cat impatience.txt
+  215  cat hubris.txt
+  216  man cat
+  217  cat laziness.txt impatience.txt hubris.txt
+  218  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  219  cat three-virtues.txt
+  220  ls
+  221  man ls
+  222  ls -a
+  223  la
+  224  ls
+  225  ls -a
+  226  ls -F
+  227  man ls
+  228  ls lfz-staff
+  229  ls lfz-staff -a
+  230  ls lfz-staff -F
+  231  ls -aF lfz-staff > lfz-staff/contents.txt
+  232  cat lfz-staff/contents.txt
+  233  man pwd
+  234  pwd
+  235  pwd > i-was-here.txt
+  236  ld
+  237  ls
+  238  cat i-was-here.txt
+  239  man echo
+  240  echo 'Hello, world!'
+  241  echo 'Hello, world!' > hello.txt
+  242  ls
+  243  cat hello.txt
+  244  man touch
+  245  touch tag-youre-it
+  246  man touch
+  247  touch snoot/boop.txt
+  248  ls
+  249  ls snoot
+  250  man mkdir
+  251  mkdir parent
+  252  ls
+  253  man mkdir
+  254  mkdir -p parent/child/grandchild
+  255  ls
+  256  ls parent
+  257  touch parent/child/grandchild/.gitkeep
+  258  ls -a
+  259  ls -a parent/child/grandchild
+  260  man mv
+  261  mv pokiemans pokemon
+  262  ls
+  263  man rm
+  264  rm lol.txt
+  265  ls
+  266  man rm
+  267  rm -r kill-me/
+  268  ls
+  269  man cp
+  270  cp and-then no-and-then
+  271  cp and-then.txt no-and-then.txt
+  272  ls
+  273  cat and-then.txt
+  274  cat no-and-then.txt
+  275  man history
+  276  history
+  277  history > command-history.txt
