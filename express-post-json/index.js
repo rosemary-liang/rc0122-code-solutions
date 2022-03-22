@@ -4,8 +4,7 @@ const app = express();
 let nextId = 1;
 const grades = {};
 
-const jsonMiddleware = express.json();
-app.use(jsonMiddleware);
+app.use(express.json());
 
 app.get('/api/grades', (req, res) => {
   const gradesArray = [];
