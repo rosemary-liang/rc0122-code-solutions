@@ -76,6 +76,29 @@ app.delete('/api/notes/:id', (req, res) => {
 
 });
 
+app.put('/api/notes/:id', (req, res) => {
+  const id = Number(req.params.id);
+  if (!(Number.isInteger(id) && id > 0)) {
+    res.status(400).json({ error: 'id must be a positive integer' });
+  } else if (!(req.body.content)) {
+    res.status(400).json({ error: 'content is a required field' });
+  } else if (!notes[id]) {
+    res.status(404).json({ error: `cannot find note with id ${id}` });
+  } else {
+    notes[id].content = req.body.content;
+
+    const newData = JSON.stringify(data, null, 2);
+    fs.writeFile('./data.json', newData, 'utf-8', err => {
+      if (err) {
+        console.error(err);
+        res.status(500).json({ error: 'An unexpected error occurred' });
+      } else {
+        res.status(200).json(notes[id]);
+      }
+    });
+  }
+});
+
 app.listen(3000, (req, res) => {
   // eslint-disable-next-line no-console
   console.log('Server listening on port 3000');

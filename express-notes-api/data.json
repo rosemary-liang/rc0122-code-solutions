@@ -1,13 +1,9 @@
 {
-  "nextId": 14,
+  "nextId": 20,
   "notes": {
     "2": {
       "id": 2,
       "content": "The event loop, this, closures, and prototypal inheritance are special about JavaScript."
-    },
-    "5": {
-      "id": 5,
-      "content": "In JavaScript, the value of `this` is determined when a function is called; not when it is defined."
     },
     "6": {
       "id": 6,
@@ -16,6 +12,18 @@
     "9": {
       "id": 9,
       "content": "Inertia is a property of matter."
+    },
+    "17": {
+      "content": "new content here",
+      "id": 17
+    },
+    "18": {
+      "content": "new content here",
+      "id": 18
+    },
+    "19": {
+      "content": "Changed string",
+      "id": 19
     }
   }
 }
