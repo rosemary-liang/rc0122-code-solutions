@@ -57,7 +57,7 @@ app.post('/api/grades', (req, res) => {
 
   const sql = `
   insert into "grades" ("course", "name", "score")
-  values ($1::text, $2::text, $3::integer)
+  values ($1, $2, $3)
   returning *;
   `;
 
@@ -72,6 +72,11 @@ app.post('/api/grades', (req, res) => {
     });
 
 });
+
+// app.put('/api/grades/:gradeId', (req, res) => {
+//   const id = Number(req.params.gradeId);
+
+// });
 
 app.listen(3000, () => {
   // eslint-disable-next-line no-console
