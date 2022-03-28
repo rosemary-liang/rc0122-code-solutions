@@ -73,10 +73,59 @@ app.post('/api/grades', (req, res) => {
 
 });
 
-// app.put('/api/grades/:gradeId', (req, res) => {
-//   const id = Number(req.params.gradeId);
+app.put('/api/grades/:gradeId', (req, res) => {
+  const gradeId = Number(req.params.gradeId);
+  const grade = req.body;
+  grade.score = Number(grade.score);
 
-// });
+  if (!Number.isInteger(gradeId) || gradeId <= 0) {
+    res.status(400).json({ error: 'id must be a positive integer' });
+    return;
+  }
+
+  if (!grade.course) {
+    res.status(400).json({ error: 'course is a required field' });
+    return;
+  }
+  if (!grade.name) {
+    res.status(400).json({ error: 'name is a required field' });
+    return;
+  }
+  if (!grade.score) {
+    res.status(400).json({ error: 'score is a required field' });
+    return;
+  }
+  if (grade.score < 0 || grade.score > 100 || !Number.isInteger(grade.score)) {
+    res.status(400).json({ error: 'score must be an integer between 0 and 100' });
+    return;
+  }
+
+  const params = [gradeId, grade.course, grade.name, grade.score];
+
+  const sql = `
+  update "grades"
+  set "course" = $2,
+      "name"  = $3,
+      "score" = $4
+  where "gradeId" = $1
+  returning * `;
+
+  db.query(sql, params)
+    .then(result => {
+      const updatedGrade = result.rows[0];
+      if (!updatedGrade) {
+        res.status(404).json({ error: 'gradeId does not exist' });
+      } else {
+        res.json(updatedGrade);
+      }
+    })
+
+    .catch(err => {
+      console.error(err);
+      res.status(500).json({ error: 'an unexpected error occurred' });
+    });
+
+});
 
 app.listen(3000, () => {
   // eslint-disable-next-line no-console
