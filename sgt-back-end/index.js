@@ -148,7 +148,7 @@ app.delete('/api/grades/:gradeId', (req, res) => {
       if (!deletedGrade) {
         res.status(404).json({ error: 'gradeId does not exist' });
       } else {
-        res.status(204).json(deletedGrade);
+        res.sendStatus(204);
       }
     })
     .catch(err => {
