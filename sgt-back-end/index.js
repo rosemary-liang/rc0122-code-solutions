@@ -9,6 +9,8 @@ const db = new pg.Pool({
   }
 });
 
+app.use(express.json());
+
 app.get('/api/grades', (req, res) => {
   const sql = `
     select *
@@ -24,6 +26,51 @@ app.get('/api/grades', (req, res) => {
         error: 'An unexpected error occurred'
       });
     });
+});
+
+app.post('/api/grades', (req, res) => {
+  const grade = req.body;
+  grade.score = Number(grade.score);
+
+  if (!grade.course) {
+    res.status(400).json({ error: 'course is a required field' });
+    return;
+  }
+  if (!grade.name) {
+    res.status(400).json({ error: 'name is a required field' });
+    return;
+  }
+  if (!grade.score) {
+    res.status(400).json({ error: 'score is a required field' });
+    return;
+  }
+  if (grade.score < 0 || grade.score > 100 || !Number.isInteger(grade.score)) {
+    res.status(400).json({ error: 'score must be an integer between 0 and 100' });
+    return;
+  }
+
+  const params = [
+    grade.course,
+    grade.name,
+    grade.score
+  ];
+
+  const sql = `
+  insert into "grades" ("course", "name", "score")
+  values ($1::text, $2::text, $3::integer)
+  returning *;
+  `;
+
+  db.query(sql, params)
+    .then(result => {
+      const newGrade = result.rows[0];
+      res.status(201).json(newGrade);
+    })
+    .catch(err => {
+      console.error(err);
+      res.status(500).json({ error: 'an unexpected error occurred' });
+    });
+
 });
 
 app.listen(3000, () => {
