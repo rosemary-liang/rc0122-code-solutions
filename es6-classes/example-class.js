@@ -2,11 +2,6 @@ class ExampleClass {
   constructor(example) {
     this.class = example;
   }
-
-  getClass() {
-    return this.example;
-  }
-
 }
 
 const example = new ExampleClass('test');
