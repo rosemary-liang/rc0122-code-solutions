@@ -31,25 +31,15 @@ const product = numbers.reduce(
 
 console.log(`product: ${product}`);
 
-const deposits = account.filter(account => account.type === 'deposit');
-const withdrawals = account.filter(account => account.type === 'withdrawal');
-
-const toDepositAmount = account => {
-  return account.amount;
+const getBalance = (balance, tx) => {
+  if (tx.type === 'deposit') {
+    return balance + tx.amount;
+  } else if (tx.type === 'withdrawal') {
+    return balance - tx.amount;
+  }
 };
 
-const toWithrawalAmount = account => {
-  return (account.amount * -1);
-};
-
-const depositBalance = deposits.map(toDepositAmount);
-const withdrawalBalance = withdrawals.map(toWithrawalAmount);
-const sumAllDeposits = depositBalance.reduce(
-  (previousValue, currentValue) => previousValue + currentValue, 0);
-const sumAllWithdrawals = withdrawalBalance.reduce(
-  (previousValue, currentValue) => previousValue + currentValue, 0);
-
-const balance = sumAllDeposits + sumAllWithdrawals;
+const balance = account.reduce(getBalance, 0);
 
 console.log('balance:', balance);
 
