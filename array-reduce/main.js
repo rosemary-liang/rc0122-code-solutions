@@ -52,3 +52,6 @@ const sumAllWithdrawals = withdrawalBalance.reduce(
 const balance = sumAllDeposits + sumAllWithdrawals;
 
 console.log('balance:', balance);
+
+const composite = Object.assign({}, traits[0], traits[1], traits[2], traits[3], traits[4]);
+console.log('composite:', composite);
