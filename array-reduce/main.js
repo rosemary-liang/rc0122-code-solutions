@@ -58,5 +58,4 @@ const composite = traits.reduce(
     return Object.assign(composite, trait);
   });
 
-// const composite = Object.assign({}, traits[0], traits[1], traits[2], traits[3], traits[4]);
 console.log('composite:', composite);
