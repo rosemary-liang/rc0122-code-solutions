@@ -1,0 +1,40 @@
+.three-clicks {
+  background-color: #351c75;
+  color: white;
+}
+
+.six-clicks {
+  background-color: #674ea7;
+  color: white;
+}
+
+.nine-clicks {
+  background-color: #e06666;
+  color: white;
+}
+
+.twelve-clicks {
+  background-color: #f6b26b;
+  color: black;
+}
+
+.fifteen-clicks {
+  background-color: #ff0;
+  color: black;
+}
+
+.eighteen-clicks {
+  background-color: #fff;
+  color: black;
+}
+
+button {
+  padding: 0.5rem 1.1rem;
+  border: solid 5px black;
+  box-shadow: 3px 3px black;
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(3px);
+}
