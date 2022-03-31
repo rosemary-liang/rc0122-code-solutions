@@ -34,3 +34,7 @@ button {
   box-shadow: 3px 3px black;
   cursor: pointer;
 }
+
+button:active {
+  transform: translateY(3px);
+}
