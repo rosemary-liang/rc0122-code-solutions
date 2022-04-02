@@ -28,9 +28,9 @@ class ToggleSwitch extends React.Component {
       return (
         <div className='position-relative'>
           <div className='position-absolute on-circle-right' >
-            <button onClick={this.handleClick} id='circle' className='right'></button>
+            <button onClick={this.handleClick} id='circle' className={this.state.circle}></button>
           </div>
-          <button onClick={this.handleClick} id='bg' className='green'></button>
+          <button onClick={this.handleClick} id='bg' className={this.state.background}></button>
           <span>ON</span>
         </div>
 
@@ -39,12 +39,11 @@ class ToggleSwitch extends React.Component {
       return (
         <div className='position-relative'>
           <div className='position-absolute' >
-            <button onClick={this.handleClick} id='circle'></button>
+            <button onClick={this.handleClick} id='circle' className={this.state.circle}></button>
           </div>
-          <button onClick={this.handleClick} id='bg'></button>
+          <button onClick={this.handleClick} id='bg' className={this.state.background}></button>
           <span>OFF</span>
         </div>
-
       );
     }
   }
