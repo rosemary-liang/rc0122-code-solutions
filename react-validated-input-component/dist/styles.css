@@ -12,21 +12,20 @@ input {
   font-size: 1.2rem;
 }
 
-.fa-x,
-.fa-check {
-  margin-left: 0.75rem;
-  font-size: 1.25rem;
-}
-
-.fa-x {
+.red {
   color: rgb(230 10 10);
 }
 
-.fa-check {
+.green {
   color: green;
 }
 
 .error-msg {
   color: red;
   font-size: 0.9em;
+}
+
+span {
+  margin-left: 0.75rem;
+  font-size: 1.25rem;
 }
