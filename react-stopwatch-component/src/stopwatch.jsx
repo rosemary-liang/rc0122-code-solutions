@@ -13,8 +13,8 @@ class Stopwatch extends React.Component {
   }
 
   tick() {
-    const seconds = this.state.timer;
-    this.setState({ timer: seconds + 1 });
+    let seconds = this.state.timer;
+    this.setState({ timer: ++seconds });
   }
 
   handlePlayClick() {
