@@ -5,30 +5,38 @@ class ValidatedInput extends React.Component {
     super(props);
     this.state = {
       icon: 'fa-solid fa-x',
-      errorMsg: 'A password is required'
+      spanColor: 'red',
+      errorMsg: 'A password is required',
+      value: ''
     };
 
     this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(event) {
-    const input = document.querySelector('input');
-    const length = input.value.length;
+    const input = event.target.value;
+    const length = event.target.value.length;
 
     if (length === 0) {
       this.setState({
         icon: 'fa-solid fa-x',
-        errorMsg: 'A password is required'
+        spanColor: 'red',
+        errorMsg: 'A password is required',
+        value: input
       });
     } else if (length < 8) {
       this.setState({
         icon: 'fa-solid fa-x',
-        errorMsg: 'Your password is too short'
+        spanColor: 'red',
+        errorMsg: 'Your password is too short',
+        value: input
       });
     } else {
       this.setState({
         icon: 'fa-solid fa-check',
-        errorMsg: ''
+        spanColor: 'green',
+        errorMsg: '',
+        value: input
       });
     }
   }
@@ -37,13 +45,12 @@ class ValidatedInput extends React.Component {
     return (
       <div>
         <div className='label'>Password</div>
-        <input onInput={this.handleChange} type='password' />
-        <span>
+        <input onChange={this.handleChange} type='password' value={this.state.value}/>
+        <span className={this.state.spanColor}>
           <i className={this.state.icon}></i>
         </span>
         <p className='error-msg'>{this.state.errorMsg}</p>
       </div>
-
     );
   }
 }
