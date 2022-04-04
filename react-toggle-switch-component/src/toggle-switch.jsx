@@ -6,7 +6,8 @@ class ToggleSwitch extends React.Component {
     this.state = {
       toggle: false,
       circle: 'left',
-      background: 'gray'
+      background: 'gray',
+      switch: 'off'
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -17,35 +18,24 @@ class ToggleSwitch extends React.Component {
     if (toggle) {
       this.setState({ circle: 'left' });
       this.setState({ background: 'gray' });
+      this.setState({ switch: 'off' });
     } else {
       this.setState({ circle: 'right' });
       this.setState({ background: 'green' });
+      this.setState({ switch: 'off' });
     }
   }
 
   render() {
-    if (this.state.toggle) {
-      return (
+    return (
         <div className='position-relative'>
           <div className='position-absolute on-circle-right' >
             <button onClick={this.handleClick} id='circle' className={this.state.circle}></button>
           </div>
           <button onClick={this.handleClick} id='bg' className={this.state.background}></button>
-          <span>ON</span>
+          <span>{this.switch}</span>
         </div>
-
-      );
-    } else {
-      return (
-        <div className='position-relative'>
-          <div className='position-absolute' >
-            <button onClick={this.handleClick} id='circle' className={this.state.circle}></button>
-          </div>
-          <button onClick={this.handleClick} id='bg' className={this.state.background}></button>
-          <span>OFF</span>
-        </div>
-      );
-    }
+    );
   }
 }
 
