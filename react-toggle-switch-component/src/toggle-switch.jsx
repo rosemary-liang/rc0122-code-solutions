@@ -16,13 +16,18 @@ class ToggleSwitch extends React.Component {
     const { toggle } = this.state;
     this.setState({ toggle: !this.state.toggle });
     if (toggle) {
-      this.setState({ circle: 'left' });
-      this.setState({ background: 'gray' });
-      this.setState({ switch: 'off' });
+      this.setState({
+        circle: 'left',
+        background: 'gray',
+        switch: 'off'
+      });
+
     } else {
-      this.setState({ circle: 'right' });
-      this.setState({ background: 'green' });
-      this.setState({ switch: 'off' });
+      this.setState({
+        circle: 'right',
+        background: 'green',
+        switch: 'off'
+      });
     }
   }
 
