@@ -1,0 +1,46 @@
+.circle {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 100px;
+  background: #fff;
+  border: 3px solid #000;
+  text-align: center;
+  font: 50px Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+p {
+  position: absolute;
+  font-size: 3rem;
+}
+
+.row {
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+i {
+  font-size: 1.75rem;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(2px);
+}
