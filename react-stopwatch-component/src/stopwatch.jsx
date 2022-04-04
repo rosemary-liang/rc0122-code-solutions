@@ -4,7 +4,7 @@ class Stopwatch extends React.Component {
     super(props);
     this.state = {
       timer: 0,
-      isClicked: false,
+      status: 'paused',
       iconClass: 'fa-solid fa-play'
     };
 
@@ -13,51 +13,44 @@ class Stopwatch extends React.Component {
   }
 
   tick() {
-    let seconds = this.state.timer;
-    this.setState({ timer: seconds++ });
+    const seconds = this.state.timer;
+    this.setState({ timer: seconds + 1 });
   }
 
-  handleClass() {
-    if (this.state.isClicked) {
-      this.setState({ iconClass: 'fa-solid fa-pause' });
-    } else {
-      this.setState({ iconClass: 'fa-solid-fa-play' });
-    }
+  handlePlayClick() {
+    if (this.state.status === 'paused') {
+      this.setState({
+        status: 'running',
+        iconClass: 'fa-solid fa-pause'
+      });
+      this.intervalID = setInterval(() => this.tick(), 1000);
 
-  }
-
-  handleInterval() {
-    if (this.state.isClicked) {
-      this.intervalID = setInterval(() => this.tick, 1000);
-    } else {
+    } else if (this.state.status === 'running') {
+      this.setState({
+        status: 'paused',
+        iconClass: 'fa-solid fa-play'
+      });
       clearInterval(this.intervalID);
     }
   }
 
-  handlePlayClick() {
-    this.setState({ isClicked: !this.state.isClicked });
-    this.handleClass();
-    this.handleInterval();
-  }
-
   handleResetClick() {
-    if (!this.state.isClicked) {
+    if (this.state.status === 'paused') {
       this.setState({ timer: 0 });
     }
   }
 
   render() {
-    // console.log('state:', this.state);
     const { timer, iconClass } = this.state;
 
     return (
       <div className='container'>
         <div className='row'>
           <p>{timer}</p>
-          <button onClick={this.handlePlayClick} className='circle'></button>
+          <button onClick={this.handleResetClick} className='circle'></button>
         </div>
         <div className='row'>
-          <button onClick={this.handleResetClick}>
+          <button onClick={this.handlePlayClick}>
             <i className={iconClass}></i>
           </button>
         </div>
