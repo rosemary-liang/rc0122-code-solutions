@@ -1,0 +1,27 @@
+* {
+  font-family: sans-serif;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+}
+
+button {
+  text-align: left;
+  height: 2.5rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+p {
+  border: 1px black solid;
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.hide {
+  display: none;
+}
