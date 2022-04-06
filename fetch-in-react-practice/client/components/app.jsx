@@ -54,8 +54,8 @@ export default class App extends React.Component {
       .then(response => response.json())
       .then(newTodo => {
         const previousTodos = this.state.todos;
-        const newArray = previousTodos.concat(newTodo);
-        this.setState({ todos: newArray });
+        const newTodos = previousTodos.concat(newTodo);
+        this.setState({ todos: newTodos });
       });
 
   }
@@ -82,6 +82,25 @@ export default class App extends React.Component {
      * TIP: Be sure to SERIALIZE the updates in the body with JSON.stringify()
      * And specify the "Content-Type" header as "application/json"
      */
+
+    const toggledIndex = this.state.todos.findIndex(todo => todo.todoId === todoId);
+    const prevStatus = this.state.todos[toggledIndex].isCompleted;
+    const newStatus = { isCompleted: !prevStatus };
+
+    fetch(`/api/todos/${todoId}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(newStatus)
+    })
+      .then(response => response.json())
+      .then(updatedTodo => {
+        const prevTodos = this.state.todos;
+        prevTodos[toggledIndex] = updatedTodo;
+        this.setState({ todos: prevTodos });
+      });
+
   }
 
   render() {
