@@ -1,36 +1,50 @@
 import React from 'react';
 
-function ButtonGroup(language) {
-  // console.log('language:', language);
-  return (
-  <div className="button-container">
-    <button>{language.button}</button>
-    <p className={language.showDescription}>{language.description}</p>
-  </div>
-  );
-}
-
 class Accordion extends React.Component {
   constructor(props) {
     super(props);
-    this.state({
-
+    this.state = ({
+      openId: null
     });
   }
 
-  handleClick(event) {
-    if (event.target.key === 'html') {
-      this.setState();
-    }
+  handleClick(id) {
+    // console.log('ID clicked:', id);
+
+    // if (this.state.openId === id) {
+    //   this.setState({ openId: null });
+    // } else {
+    //   this.setState({ openId: id });
+    // }
+
+    const openId = this.state.openId === id ? null : id;
+    this.setState({ openId });
   }
 
   render() {
-    const buttonList = this.props.data.map(language =>
-      <ButtonGroup key={language.key} value={language}/>);
+    // console.log('topics:', this.props.topics);
+    // console.log('state:', this.state);
+    const topicElements = this.props.topics.map(topic => {
+      // console.log('topic:', topic);
 
-    return (
-      <div className="main-container">{buttonList}</div>
-    );
+      // let content = null;
+      // if (this.state.openId === topic.id) {
+      //   content = <div className='content'>{topic.content}</div>;
+      // }
+
+      return (
+      <div className='button-container' key={topic.id}>
+        <h3 className='title' onClick={() => { this.handleClick(topic.id); }}>{topic.title}</h3>
+        {
+          this.state.openId === topic.id
+            ? <div className='content'>{topic.content}</div>
+            : null
+         }
+      </div>
+      );
+    });
+
+    return topicElements;
   }
 }
 
