@@ -83,9 +83,10 @@ export default class App extends React.Component {
      * And specify the "Content-Type" header as "application/json"
      */
 
-    const toggledIndex = this.state.todos.findIndex(todo => todo.todoId === todoId);
-    const prevStatus = this.state.todos[toggledIndex].isCompleted;
-    const newStatus = { isCompleted: !prevStatus };
+    const { todos } = this.state;
+    const toggledIndex = todos.findIndex(todo => todo.todoId === todoId);
+    const { isCompleted } = todos[toggledIndex];
+    const newStatus = { isCompleted: !isCompleted };
 
     fetch(`/api/todos/${todoId}`, {
       method: 'PATCH',
