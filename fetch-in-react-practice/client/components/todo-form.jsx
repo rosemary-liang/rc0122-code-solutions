@@ -2,6 +2,7 @@ import React from 'react';
 
 class TodoForm extends React.Component {
   constructor(props) {
+    // console.log('TodoForm constructor props:', props);
     super(props);
     this.state = {
       task: ''

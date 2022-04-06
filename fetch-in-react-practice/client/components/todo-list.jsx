@@ -1,6 +1,7 @@
 import React from 'react';
 
 function Todo(props) {
+  // console.log('Todo props:', props);
   const { todoId, task, isCompleted } = props.todo;
   const idAttr = `todo-item-${todoId}`;
   const taskClass = isCompleted
@@ -24,6 +25,7 @@ function Todo(props) {
 }
 
 function TodoList(props) {
+  // console.log('TodoList props:', props);
   return (
     <ul className="list-group shadow-sm">
       {
