@@ -20,7 +20,8 @@ export default class App extends React.Component {
      * it with the parseRoute() function and update state
      */
     window.addEventListener('hashchange', () => {
-      this.setState({ route: parseRoute(window.location.hash) });
+      const route = parseRoute(window.location.hash);
+      this.setState({ route });
     });
 
   }
