@@ -1,0 +1,40 @@
+Overall
+  app.jsx
+    renderPage() does view swapping between Home, Auth, and NotFound pages
+
+
+On <Home> component,
+  - Once compononent mounts:
+    - the hashchange event sets state for the route
+    - localStorage is checked for a token, which is decoded if found
+    - setState occurs for user containing updated token information and isAuthorizing is now false
+
+  - render () is called
+    - until isAuthorizing is false, return null and render nothing
+    - when isAuthorizing is false:
+      - set Provider component with contextValue of user, route, handleSignIn and handleSignOut
+      - render AppContext.Provider, Navbar, PageContainer
+      - in pageContainer, render the page depending on path giving in this.state.route
+
+
+On <AuthPage> component,
+  - AppContext values of {user, route, handleSignIn} are used
+  - if {user} is null, then automatically redirect to sign-in view from AuthPage component
+    - This is how a user can remain signed in on a page even after a refresh
+  - <AuthForm> key, action, and onSignIn are set here using this.state.route
+
+
+<AuthForm> component is part of <AuthPage> render()
+   - If action=sign-up, use fetch to post sign-up request to database using this.state of <AuthForm> containing username and password
+    - If either username or password is empty, return error 400
+    - Else, hash the password. Hashed password and username are used in sql query to post the username and password to the database, returning userId, username, and createdAt back to the user upon success of the fetch
+
+    - If action=sign-in, use fetch to post a sign-in request to the database using this.state of <AuthForm> containing username and password
+      - If sql query returns no results, throw error 401 invalid login
+      - If sql query returns valid result, deconstruct results array[0]  to the const user
+        - Use argon2 to verify if hashedPassword from server matches user input password
+          - If false, throw error 401 invalid login
+          - If true, set up payload and token using JSON web token & return response to user containing token and user: payload
+
+<Navbar> component allows user to sign out
+  - If this.state.user is not null and user clicks sign-out, the handleSignOut() method on the App class will remove the stored token from local storage and setState user to null, which renders the App view back to the <Auth> page
