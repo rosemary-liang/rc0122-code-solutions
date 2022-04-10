@@ -58,10 +58,10 @@ app.post('/api/auth/sign-in', (req, res, next) => {
   const params = [username];
   db.query(sql, params)
     .then(result => {
-      if (!username) {
+      const [user] = result.rows;
+      if (!user) {
         throw new ClientError(401, 'invalid login');
       } else {
-        const [user] = result.rows;
         const { userId, username, hashedPassword } = user;
 
         argon2
